@@ -5,7 +5,7 @@ dotenv.config({
 });
 
 export default {
-  PORT: process.env.PORT || '3001'
+  PORT: process.env.PORT || '80'
 } as {
   PORT: string;
 };
