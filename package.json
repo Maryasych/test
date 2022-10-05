@@ -5,11 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc-esm",
-    "watch-node": "nodemon dist/index.js",
-    "watch-ts": "tsc -w",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "dev": "nodemon",
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts"
@@ -18,10 +13,10 @@
   "author": "T3D",
   "license": "ISC",
   "devDependencies": {
-    "@digitak/tsc-esm": "^3.1.4",
     "@types/express": "^4.17.13",
     "@types/lodash": "^4.14.185",
     "@types/node": "^17.0.23",
+    "@types/three": "^0.139.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.15",

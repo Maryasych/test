@@ -1,4 +1,3 @@
-//@ts-nocheck
 import * as THREE from 'three';
 import * as Utils from './FunctionLibrary';
 import { World } from '../world/World';

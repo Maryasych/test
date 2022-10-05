@@ -1,10 +1,13 @@
 import express from 'express';
+import * as THREE from 'three';
 import * as http from 'http';
 import path from 'path';
 import cors from 'cors';
 import config from './config';
 import geckos, { ServerChannel } from '@geckos.io/server';
 import { World } from './ts/world/World';
+import { Character } from './ts/characters/Character';
+import { channel } from 'diagnostics_channel';
 
 class Server {
   private app = express();
@@ -33,7 +36,7 @@ class Server {
     });
 
 
-    serverHttp.listen(config.PORT, () => {
+    serverHttp.listen(config.APP_PORT, () => {
       console.log('Launched SkyBuds server');
     });
   }

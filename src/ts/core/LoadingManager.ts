@@ -9,7 +9,6 @@ export class LoadingManager
 	public onFinishedCallback: (() => void) | undefined;
 
 	private world: World;
-	//@ts-ignore
 	private gltfLoader: AMMONodejs.Loaders.GLTFLoader;
 	private loadingTracker: LoadingTrackerEntry[] = [];
 

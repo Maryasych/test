@@ -94,7 +94,6 @@ export class Scenario
 		// console.log('this.characterSpawnPointList', this.characterSpawnPointList);
 
 		this.remoteData.forEach((data: any) => {
-			//@ts-ignore
 			if (data.id === this.localPlayer.character.playerId) return;
 
 			const rplayerSpawn = this.characterSpawnPointList.find(({playerId}) => playerId === data.id);

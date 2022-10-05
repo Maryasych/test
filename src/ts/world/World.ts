@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import * as TWEEN from '@tweenjs/tween.js';
-//@ts-ignore
+
 import _ammo from '@enable3d/ammo-on-nodejs/ammo/ammo.js';
 import { default as AMMONodejs } from '@enable3d/ammo-on-nodejs';
 import '../../lib/cannon/cannon'
@@ -82,7 +82,6 @@ export class World {
 
     this.cameraOperator = new CameraOperator(this, this.fakeCamera, 0.3);
     _ammo().then((ammo: any) => {
-      //@ts-ignore
       globalThis.Ammo = ammo;
     });
 
