@@ -23,7 +23,6 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@enable3d/ammo-on-nodejs": "^0.25.2",
     "@geckos.io/server": "^2.2.3",
     "@tweenjs/tween.js": "^18.6.4",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
