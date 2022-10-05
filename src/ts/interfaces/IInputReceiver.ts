@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { KeyBinding } from '../core/KeyBinding';
 
 export interface IInputReceiver
